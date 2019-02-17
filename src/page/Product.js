@@ -8,12 +8,13 @@ import { Image, Dimensions, TouchableWithoutFeedback, AsyncStorage } from 'react
 import { View, Container, Content, Button, Left, Right, Icon, Picker, Item, Grid, Col, Toast, Text as NBText } from 'native-base';
 import { Actions } from 'react-native-router-flux';
 import Carousel, { Pagination } from 'react-native-snap-carousel';
-import {Ionicons} from '@expo/vector-icons';
+import { Ionicons, MaterialIcons, Entypo} from '@expo/vector-icons';
 // Our custom files and classes import
 import Colors from '../Colors';
 import Text from '../component/Text';
 import Navbar from '../component/Navbar';
 import {default as ProductComponent} from '../component/Product';
+
 
 export default class Product extends Component {
 
@@ -143,13 +144,13 @@ export default class Product extends Component {
               <Col size={3}>
                 <View style={{flex: 1, flexDirection: 'row'}}>
                   <Button style={{flex: 1}} icon light onPress={() => this.setState({quantity: this.state.quantity>1 ? this.state.quantity-1 : 1})} >
-                    <Ionicons name='ios-remove' />
+                    <Entypo size={25} color={Colors.navbarBackgroundColor} name='squared-minus'/>
                   </Button>
                   <View style={{flex: 4, justifyContent: 'center', alignItems: 'center', paddingLeft: 30, paddingRight: 30}}>
                     <Text style={{fontSize: 18}}>{this.state.quantity}</Text>
                   </View>
                   <Button style={{flex: 1}} icon light onPress={() => this.setState({quantity: this.state.quantity+1})}>
-                    <Icon name='ios-add' />
+                    <MaterialIcons size={25} color={Colors.navbarBackgroundColor} name='add-box' />
                   </Button>
                 </View>
               </Col>
@@ -320,22 +321,22 @@ export default class Product extends Component {
 
 const dummyProduct = {
   id: 2,
-  title: 'V NECK T-SHIRT',
-  description: "Pellentesque orci lectus, bibendum iaculis aliquet id, ullamcorper nec ipsum. In laoreet ligula vitae tristique viverra. Suspendisse augue nunc, laoreet in arcu ut, vulputate malesuada justo. Donec porttitor elit justo, sed lobortis nulla interdum et. Sed lobortis sapien ut augue condimentum, eget ullamcorper nibh lobortis. Cras ut bibendum libero. Quisque in nisl nisl. Mauris vestibulum leo nec pellentesque sollicitudin. Pellentesque lacus eros, venenatis in iaculis nec, luctus at eros. Phasellus id gravida magna. Maecenas fringilla auctor diam consectetur placerat. Suspendisse non convallis ligula. Aenean sagittis eu erat quis efficitur. Maecenas volutpat erat ac varius bibendum. Ut tincidunt, sem id tristique commodo, nunc diam suscipit lectus, vel",
-  image: 'http://res.cloudinary.com/atf19/image/upload/c_crop,h_250,w_358,x_150/v1500465309/pexels-photo-206470_nwtgor.jpg',
+  title: '헬로 아이스크림 구매',
+  description: "헬로는 맛있는 아이스크림을 건강하고 죄책감 없이 즐기고 싶은 사람들을 위한 프리미엄 아이스크림입니다. 맛있는 행복을 죄책감 없이 즐기시길 바랍니다.헬로아이스크림은 100ml에 62kcal 일수 있는 이유는 지방 함량과 설탕을 확 줄였습니다.하지만 헬로아이스크림 달콤하고 맛있는 이유는 천연감미료를 사용하여 아이스크림을 만들기 때문입니다.",
+  image: 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/hello-kitty-ice-cream-2-1498662450.jpg',
   images: [
-    'http://res.cloudinary.com/atf19/image/upload/c_crop,h_250,w_358,x_150/v1500465309/pexels-photo-206470_nwtgor.jpg',
-    'http://res.cloudinary.com/atf19/image/upload/c_crop,h_250,x_226,y_54/v1500465309/pexels-photo-521197_hg8kak.jpg',
-    'http://res.cloudinary.com/atf19/image/upload/c_crop,g_face,h_250,x_248/v1500465308/fashion-men-s-individuality-black-and-white-157675_wnctss.jpg',
-    'http://res.cloudinary.com/atf19/image/upload/c_crop,h_250/v1500465308/pexels-photo-179909_ddlsmt.jpg'
+    'https://delitefulboutique.com/wp-content/uploads/2017/01/Hello-Kitty-Double-Ice-Cream-Squishy.jpg',
+    'https://data.whicdn.com/images/115639412/original.jpg',
+    'https://thumbor.thedailymeal.com/2ae2XtTd_qeB7Y4GQs3YJPmjL2E=/840x565/https://www.thedailymeal.com/sites/default/files/story/hk-cake.jpg',
+    'https://soft.cutesquishy.com/images/product_images/large_img/cute-Hello-Kitty-vanilla-chocolate-ice-cream-cup-squishy-charm-cellphone-charm--209451-1.JPG'
   ],
-  price: '120$',
-  colors: ['Red', 'Blue', 'Black'],
+  price: '2000원',
+  colors: ['토핑', '캔디', '초코시럽'],
   sizes: ['S', 'M', 'L', 'XL', 'XXL'],
-  category: 'MAN',
+  category: ' 저칼로리',
   similarItems: [
-    {id: 10, title: 'V NECK T-SHIRT', price: '29$', image: 'http://res.cloudinary.com/atf19/image/upload/c_crop,g_face,h_250,x_248/v1500465308/fashion-men-s-individuality-black-and-white-157675_wnctss.jpg'},
-    {id: 11, title: 'V NECK T-SHIRT', price: '29$', image: 'http://res.cloudinary.com/atf19/image/upload/c_crop,h_250/v1500465308/pexels-photo-179909_ddlsmt.jpg'},
-    {id: 12, title: 'V NECK T-SHIRT', price: '29$', image: 'http://res.cloudinary.com/atf19/image/upload/c_crop,h_250/v1500465308/pexels-photo-179909_ddlsmt.jpg'}
+    { id: 10, title: '헬로 아이크림 1', price: '2500원', image: 'http://helloicecream.co.kr/web/upload/NNEditor/20180629/%EC%9E%91%EC%9D%80%EC%82%AC%EC%9D%B4%EC%A6%88_shop1_191450.jpg'},
+    { id: 11, title: '헬로 아이크림 2', price: '3000원', image: 'https://scontent-ort2-1.cdninstagram.com/vp/4671782dd006d59191c424b0a4e9ba1b/5C87646F/t51.2885-15/e35/36816658_1067735650049045_8051066683416117248_n.jpg'},
+    { id: 12, title: '헬로 아이크림 3', price: '2800원', image: 'https://scontent-ort2-1.cdninstagram.com/vp/d2185ff804a93f56558c902af5c1c666/5C7C2598/t51.2885-15/e35/42933318_1875895212518267_6033701491640916813_n.jpg'}
   ]
-};
+}

@@ -21,17 +21,17 @@ export default class Home extends Component {
     var left = (
       <Left style={{flex:1}}>
         <Button onPress={() => this._sideMenuDrawer.open()} transparent>
-          < Ionicons name = 'ios-menu' / >
+          < Ionicons size={30} name = 'ios-menu' / >
         </Button>
       </Left>
     );
     var right = (
       <Right style={{flex:1}}>
         <Button onPress={() => Actions.search()} transparent>
-          < Ionicons name = 'ios-search' />
+          < Ionicons size={30} name = 'ios-search' />
         </Button>
         <Button onPress={() => Actions.cart()} transparent>
-          <Icon name='ios-cart' />
+          <Icon  name='ios-cart' />
         </Button>
       </Right>
     );
@@ -63,12 +63,12 @@ var categories = [
   {
     id: 1,
     title: '헬로 아이스크림',
-    image: 'http://blogfiles.naver.net/MjAxODA0MjlfMTEx/MDAxNTI1MDEyMTcxNjgy.5q1_4ncSJyzbYIm_KqlA8qDJS-E4-d1L9Oog4WUbt1Ig.5LQUpoKCsW7sd2Za76R5vp7hNeYK5eWX8EpeDkFVgNwg.JPEG.sk31505/%C7%EF%B7%CE%BE%C6%C0%CC%BD%BA%C5%A9%B8%B2.jpg'
+    image: 'http://drive.google.com/uc?export=view&id=1lQnVlmoa2jxGa0NkdVEkxzXIiAZ0NqJY'
   },
   {
     id: 2,
     title: '저칼로리 아이스크림',
-    image: 'http://blogfiles.naver.net/MjAxODEwMjRfODIg/MDAxNTQwMzIyNzczNzg1.GkNVvjAaF7iw8rbn4KCu2_s29j2J4qgWRPkJ_fgTaNAg.eOoGCShi-SPOmrO8l5M4pYC17sih34fzk5RAt4zlv8gg.JPEG.always0513/%C0%FA%C4%AE%B7%CE%B8%AE%BE%C6%C0%CC%BD%BA%C5%A9%B8%B2005-5%C0%FA%C4%AE%B7%CE%B8%AE%BE%C6%C0%CC%BD%BA%C5%A9%B8%B2_%C7%EF%B7%CE%BE%C6%C0%CC%BD%BA%C5%A9%B8%B2.JPG'
+    image: 'https://i.ytimg.com/vi/kayCzKUyL7A/maxresdefault.jpg'
   },
   {
     id: 3,

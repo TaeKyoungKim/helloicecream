@@ -154,7 +154,8 @@ const styles={
 };
 
 const items = [
-  {id: 1, quantity:1, title: 'Black Hat', categoryId: 5, categoryTitle: 'MEN', price: '3000원', image: 'http://res.cloudinary.com/atf19/image/upload/c_crop,h_250,w_358,x_150/v1500465309/pexels-photo-206470_nwtgor.jpg', description: "Hello there, i'm a cool product with a heart of gold."},
-  {id: 2, quantity:3, title: 'V Neck T-Shirt', categoryId: 2, categoryTitle: 'WOMEN', price: '12$', image: 'http://res.cloudinary.com/atf19/image/upload/c_crop,h_250,x_226,y_54/v1500465309/pexels-photo-521197_hg8kak.jpg', description: "Hello there, i'm a cool product with a heart of gold."},
-  {id: 10, quantity:1, title: 'Black Leather Hat', categoryId: 1, categoryTitle: 'KIDS', price: '2$', image: 'http://res.cloudinary.com/atf19/image/upload/c_crop,g_face,h_250,x_248/v1500465308/fashion-men-s-individuality-black-and-white-157675_wnctss.jpg', description: "Hello there, i'm a cool product with a heart of gold."},
+  { id: 1, quantity: 1, title: 'HelloIceCream', categoryId: 5, categoryTitle: 'Hello', price: '3000원', image: 'https://soft.cutesquishy.com/images/product_images/large_img/cute-Hello-Kitty-vanilla-chocolate-ice-cream-cup-squishy-charm-cellphone-charm--209451-1.JPG', description: "Hello 아이스 크림"},
+  {
+    id: 2, quantity: 3, title: 'LowCaloryIceCream', categoryId: 2, categoryTitle: 'IceCream', price: '2500원', image: 'https://previews.123rf.com/images/nataliyaart/nataliyaart1704/nataliyaart170400004/75451878-strawberry-ice-cream-in-a-waffle-cup-lettering-quote-hello-summer-vector-art-eps-10.jpg', description: "헬로 아이스크림 50,000개 판매 돌파 기념 50% 할인 이벤트!!!"},
+  { id: 10, quantity: 1, title: 'WellIceCream', categoryId: 1, categoryTitle: 'IceBar', price: '2700원', image: 'https://macaulifestyle.com/wp-content/uploads/2017/02/Hello-Kitty-Obrigado-Ice-Cream.jpg', description: "적어도 아이스크림 만큼은 걱정없이 먹자 헬로아이스크림"},
 ];

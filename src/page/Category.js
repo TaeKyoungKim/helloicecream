@@ -27,17 +27,20 @@ export default class Category extends Component {
 
   componentWillMount() {
     var products = [
-      {id: 1, title: '요거트맛', categoryId: 5, categoryTitle: 'MEN', price: '22$', image: 'http://blogfiles.naver.net/MjAxODA0MjBfMjUg/MDAxNTI0MjI4ODc1Nzk0.bDZlypfe5IXiHjRze5gPo3OPfyU5dVvKA68Nm4qCbmUg.AjoEzDJA6A-hrJF7gTptEcWUqEJSlIgf_im0xkOfZGMg.JPEG.honeyt02/%C7%EF%B7%CE%BE%C6%C0%CC%BD%BA%C5%A9%B8%B200.JPG', description: "Hello there, i'm a cool product with a heart of gold."},
-      {id: 2, title: '피넛버터맛', categoryId: 2, categoryTitle: 'WOMEN', price: '12$', image: 'http://blogfiles.naver.net/MjAxODA2MDNfNzUg/MDAxNTI4MDA4NzI5MDU0.9SVzrToy1HDGbca55DHDBpK91ZIHMJvYLXFZ5VZdwWgg.08W2ebt5LtVCst3xMbEmo4fuJi5Erb2xt8oSo3f-LKIg.JPEG.kkadaeki83/1528008718439.jpg', description: "Hello there, i'm a cool product with a heart of gold."},
-      {id: 10, title: '바나나맛', categoryId: 1, categoryTitle: 'KIDS', price: '2$', image: 'http://blogfiles.naver.net/MjAxODAyMDJfNDUg/MDAxNTE3NTM5OTk5NjY5.QmkJGgDd7AICt303vbDSBaTMhj3-TAzFrF0RqA0Zw20g.yJnJ-4O3fiqF1yBMeUHnBq05itASB7E5z3HhjmYlLFsg.JPEG.rubijina/%C7%EF%B7%CE%BE%C6%C0%CC%BD%BA%C5%A9%B8%B24.jpg', description: "Hello there, i'm a cool product with a heart of gold."},
-      {id: 15, title: '카라멜맛', categoryId: 5, categoryTitle: 'MEN', price: '120$', image: 'http://res.cloudinary.com/atf19/image/upload/c_crop,h_250,x_100,y_50/v1500465308/pexels-photo-500034_uvxwcq.jpg', description: "Hello there, i'm a cool product with a heart of gold."},
-      {id: 11, title: '다크초코맛', categoryId: 5, categoryTitle: 'MEN', price: '22$', image: 'http://res.cloudinary.com/atf19/image/upload/c_crop,h_250/v1500465308/pexels-photo-179909_ddlsmt.jpg', description: "Hello there, i'm a cool product with a heart of gold."},
-      {id: 22, title: '녹차맛', categoryId: 2, categoryTitle: 'WOMEN', price: '12$', image: 'http://res.cloudinary.com/atf19/image/upload/c_scale,w_300/v1500284127/pexels-photo-497848_yenhuf.jpg', description: "Hello there, i'm a cool product with a heart of gold."},
-      {id: 100, title: '리코타치즈맛', categoryId: 1, categoryTitle: 'KIDS', price: '2$', image: 'http://res.cloudinary.com/atf19/image/upload/c_crop,g_center,h_250/v1500465307/pexels-photo-262226_kbjbl3.jpg', description: "Hello there, i'm a cool product with a heart of gold."},
-      {id: 215, title: '바닐라맛', categoryId: 5, categoryTitle: 'MEN', price: '120$', image: 'http://res.cloudinary.com/atf19/image/upload/c_scale,w_300/v1500284127/pexels-photo-497848_yenhuf.jpg', description: "Hello there, i'm a cool product with a heart of gold."},
-      {id: 12, title: '일반 아이스크림', categoryId: 5, categoryTitle: 'MEN', price: '22$', image: 'http://res.cloudinary.com/atf19/image/upload/c_crop,g_face,h_250/v1500465307/pexels-photo-488541_s0si3h.jpg', description: "Hello there, i'm a cool product with a heart of gold."},
-      {id: 29, title: '딸기맛', categoryId: 2, categoryTitle: 'WOMEN', price: '12$', image: 'http://res.cloudinary.com/atf19/image/upload/c_scale,w_300/v1500284127/pexels-photo-497848_yenhuf.jpg', description: "Hello there, i'm a cool product with a heart of gold."},
-      {id: 16, title: '퓨전 맛', categoryId: 1, categoryTitle: 'KIDS', price: '2$', image: 'http://res.cloudinary.com/atf19/image/upload/c_scale,w_300/v1500284127/pexels-photo-497848_yenhuf.jpg', description: "Hello there, i'm a cool product with a heart of gold."},
+      { id: 1, title: '요거트맛', categoryId: 5, categoryTitle: '헬로아이스크림', price: '내사진만 보이네', image: 'http://drive.google.com/uc?export=view&id=1W8Xsx_LFN3VzMjegHKmNoBFPbBIFgRST', description: "Hello there, i'm a cool product with a heart of gold."},
+      { id: 2, title: '피넛버터맛', categoryId: 2, categoryTitle: '헬로아이스크림', price: '머가~이렇게 맛있지?', image: 'http://drive.google.com/uc?export=view&id=1uTZhuIR2m22Dg_bn4RpPHj5jhBXHczqe', description: "Hello there, i'm a cool product with a heart of gold."},
+      { id: 10, title: '바나나맛', categoryId: 1, categoryTitle: '헬로아이스크림', price: '아들 아이스크림 먹방 ㅎㅎ', image: 'http://drive.google.com/uc?export=view&id=19XvSMt5cehu-v8qsEyfWVXQILeaH9sin', description: "Hello there, i'm a cool product with a heart of gold."},
+      { id: 15, title: '카라멜맛', categoryId: 5, categoryTitle: '헬로아이스크림', price: '살 안찌는 맛남', image: 'http://drive.google.com/uc?export=view&id=1Ona0o8K4mMbB9WbmFGvO2Z_unL7QNjRf', description: "Hello there, i'm a cool product with a heart of gold."},
+      { id: 11, title: '다크초코맛', categoryId: 5, categoryTitle: '저칼로아이스크림', price: '이거 남자한테~ 딱', image: 'http://drive.google.com/uc?export=view&id=1OoKJvwiKeu9_YZdSfIGz_z0mp6SmMBIT', description: "Hello there, i'm a cool product with a heart of gold."},
+      { id: 22, title: '녹차맛', categoryId: 2, categoryTitle: '저칼로리아이스크림', price: '1500원에 행복', image: 'http://mblogthumb3.phinf.naver.net/20160614_170/kitty6865_1465889090602CYi8k_JPEG/1465819967108.jpg?type=w2', description: "Hello there, i'm a cool product with a heart of gold."},
+      { id: 100, title: '리코타치즈맛', categoryId: 1, categoryTitle: '저칼로리아이스크림', price: '이거 진짜다이어트', image: 'http://drive.google.com/uc?export=view&id=1HkduFT33GRi-6WAzlrn7rqgD79dC3wlq', description: "Hello there, i'm a cool product with a heart of gold."},
+      { id: 215, title: '바닐라맛', categoryId: 5, categoryTitle: '저칼로리아이스크림', price: '2000원', image: 'http://mblogthumb3.phinf.naver.net/MjAxODA1MzBfMjY4/MDAxNTI3NjcyNTA0OTk1.flPhZlVcIBmdYhrhn41MZ34YluIp3zlvcy5DmpPjpQwg.xxY-cMdh3mZ9CqvNZhAi5WI6p7Uq6GDUcJUi-izwswQg.JPEG.clicksoojung/20180530_182754.jpg?type=w800', description: "Hello there, i'm a cool product with a heart of gold."},
+      { id: 12, title: '일반 아이스크림', categoryId: 5, categoryTitle: '일반아이스크림', price: '2200원', image: 'http://www.babytimes.co.kr/news/photo/201807/21053_38647_1337.jpg', description: "Hello there, i'm a cool product with a heart of gold."},
+      { id: 29, title: '딸기맛', categoryId: 2, categoryTitle: '일반아이스크림', price: '2300원', image: 'http://mblogthumb4.phinf.naver.net/MjAxODA2MDRfMjMy/MDAxNTI4MDkyODU2Mjk1.sOZ65pbF-ga-xouApjoLGB9ZdLwzbwu0QOZydLopG-Yg.yX-OVc6jXTVrLSGVNdBgaU7MKCAh9KGp93VGAkfLT7cg.JPEG.clicksoojung/20180604_151313.jpg?type=w800', description: "Hello there, i'm a cool product with a heart of gold."},
+      { id: 16, title: '이데로쭈욱', categoryId: 1, categoryTitle: '헬로림이스크림', price: '좀 시크한가요?', image: 'http://drive.google.com/uc?export=view&id=1n8JJDe3IVfV46KdWZYCEqxe9AzZI1qem', description: "Hello there, i'm a cool product with a heart of gold."},
+      { id: 17, title: '다이어트', categoryId: 1, categoryTitle: '헬로림이스크림', price: '정말 맛도있네요', image: 'http://drive.google.com/uc?export=view&id=1Z0apdmbUEY6KaNY5MKeHMVV0UB2xHBpm', description: "Hello there, i'm a cool product with a heart of gold." },
+      { id: 23, title: '맛스크림', categoryId: 1, categoryTitle: '헬로림이스크림', price: '내 최 애템', image: 'http://drive.google.com/uc?export=view&id=1YJ51gEcBvtvptlnwgIT8S0VU61d5ox-W', description: "Hello there, i'm a cool product with a heart of gold." },
+      { id: 26, title: '이맛이야!', categoryId: 1, categoryTitle: '헬로림이스크림', price: '저칼로리 딱이야', image: 'http://drive.google.com/uc?export=view&id=1sNRCEf-kU_N6A6mOUyS2hrHZOHgT0qwM', description: "Hello there, i'm a cool product with a heart of gold." },
     ];
     this.setState({items: products});
   }
@@ -46,14 +49,14 @@ export default class Category extends Component {
     var left = (
       <Left style={{flex:1}}>
         <Button onPress={() => this._sideMenuDrawer.open()} transparent>
-          < Ionicons name = 'ios-menu'/>
+          < Ionicons Ionicons size={30} name = 'ios-menu'/>
         </Button>
       </Left>
     );
     var right = (
       <Right style={{flex:1}}>
         <Button onPress={() => Actions.search()} transparent>
-          < Ionicons name = 'ios-search' / >
+          < Ionicons Ionicons size={30} name = 'ios-search' / >
         </Button>
         <Button onPress={() => Actions.cart()} transparent>
           <Icon name='ios-cart' />
